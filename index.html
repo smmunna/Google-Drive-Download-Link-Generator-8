@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive Download Link Generator</title>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/js" href="bootstrap.min.js">
+
+</head>
+<body>
+
+    
+    <div class="card">
+        <hr>
+            <h3>Google Drive Download Link Generator <span class="badge badge-secondary">New</span></h3>
+            <hr>
+                    <p class="alert alert-warning">Paste the link that you copied from google drive</p>
+                    <input type="text" onfocus="this.value=''" id="link" placeholder="https://drive.google.com/xxx/x/xxxxxxxx-xxxxxxxxxxxx/xxX" class="form-control"> <br>
+                    <input class="btn btn-primary"  type="button" value="Get Link" onclick="myfun()">       
+                    
+
+                    <br>
+                    <textarea class="form-control" name="textarea" id="demo" >Converted Link will show here</textarea> <br>
+
+
+  
+        <input class="btn btn-info" type="button" value="Copy" onclick="copylink()">
+
+        <br>
+        <div class="alert success" style="display: none;" id="alrtbox">
+            <span class="closebtn">&times;</span>  
+                 <strong>Successfully!</strong> Link has been copied..
+                         </div>
+                        </div>
+   
+                        <p style="text-align: center; margin-top: 10px;">Made by Munna 2021&copy;</p>
+                             
+                             
+                             
+                             
+                 
+                         
+
+<script src="generator.js"></script>
+</body>
+</html>
